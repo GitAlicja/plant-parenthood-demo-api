@@ -1,0 +1,32 @@
+[
+    {
+        "id": "001",
+        "common_name": "",
+        "slug": "",
+        "scientific_name": "",
+        "family_common_name": "",
+        "image_url": "",
+        "synonyms": [""],
+        "main_species": {
+            "growth": {
+                "bloom_months": [""],
+                "ph_maximum": "",
+                "ph_minimum": "",
+                "light": "",
+                "atmospheric_humidity": "",
+                "minimum_temperature.deg_c": "",
+                "maximum_temperature.deg_c": "",
+                "soil_texture": "",
+                "soil_humidity": ""
+            },
+            "distribution": {
+                "native": [""]
+            },
+            "images": {
+                "flower": [""],
+                "leaf": [""]
+            }
+        }
+
+    }
+]
