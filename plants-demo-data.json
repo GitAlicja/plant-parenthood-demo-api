@@ -1,32 +1,99 @@
-[
-    {
-        "id": "001",
-        "common_name": "",
-        "slug": "",
-        "scientific_name": "",
-        "family_common_name": "",
-        "image_url": "",
-        "synonyms": [""],
-        "main_species": {
-            "growth": {
-                "bloom_months": [""],
-                "ph_maximum": "",
-                "ph_minimum": "",
-                "light": "",
-                "atmospheric_humidity": "",
-                "minimum_temperature.deg_c": "",
-                "maximum_temperature.deg_c": "",
-                "soil_texture": "",
-                "soil_humidity": ""
-            },
-            "distribution": {
-                "native": [""]
-            },
-            "images": {
-                "flower": [""],
-                "leaf": [""]
+{
+    "data": [
+        {
+            "id": 1,
+            "common_name": "Lavender",
+            "slug": "lavandula-angustifolia",
+            "scientific_name": "Lavandula angustifolia",
+            "family_common_name": "Lamiaceae",
+            "image_url": "https://unsplash.com/photos/DhC4Bo9dM9M",
+            "synonyms": ["Stoechas", "Fabricia", "Styphonia", "Chaetostachys"],
+            "main_species": {
+                "growth": {
+                    "bloom_months": ["June", "July", "August"],
+                    "ph_maximum": 8,
+                    "ph_minimum": 6,
+                    "light": "full sun",
+                    "atmospheric_humidity": "needs good air circulation",
+                    "minimum_temperature.deg_c": null,
+                    "maximum_temperature.deg_c": null,
+                    "soil_texture": "well-drained, alkaline soil",
+                    "soil_humidity": "dry to medium"
+                },
+                "distribution": {
+                    "native": ["countries bordering the Mediterranean"]
+                },
+                "images": {
+                    "flower": ["https://unsplash.com/photos/maTTTnHzPIk", "https://unsplash.com/photos/IjygOuTpEzg", "https://unsplash.com/photos/6WZUmYgZlMY", "https://unsplash.com/photos/ft9NjuyReqI", "https://unsplash.com/photos/wm_Q_M7uEes", "https://unsplash.com/photos/LBu4WQxJNMw"],
+                    "leaf": []
+                }
             }
-        }
 
+        },
+        {
+            "id": 2,
+            "common_name": "Peony",
+            "slug": "paeonia-suffruticosa",
+            "scientific_name": "Paeonia suffruticosa",
+            "family_common_name": "Paeoniaceae",
+            "image_url": "https://unsplash.com/photos/MVKYxT3VB3A",
+            "synonyms": ["Paeony", "Paeonia"],
+            "main_species": {
+                "growth": {
+                    "bloom_months": ["May", "June"],
+                    "ph_maximum": 6,
+                    "ph_minimum": 5,
+                    "light": "full sun",
+                    "atmospheric_humidity": "needs good air circulation",
+                    "minimum_temperature.deg_c": null,
+                    "maximum_temperature.deg_c": null,
+                    "soil_texture": "well-drained, loamy",
+                    "soil_humidity": "medium"
+                },
+                "distribution": {
+                    "native": ["Asia", "Europe"]
+                },
+                "images": {
+                    "flower": ["https://unsplash.com/photos/_C9XM02Y5ZE", "https://unsplash.com/photos/ouopeFpkwco", "https://unsplash.com/photos/eK2lSRUZkbo", "https://unsplash.com/photos/6BykweIpp8s", "https://unsplash.com/photos/CvYlRp82jwE"],
+                    "leaf": ["https://unsplash.com/photos/twLC379XTMs", "https://unsplash.com/photos/Ljp8fd3jVLg", "https://unsplash.com/photos/OelgZ9Hh7Zg"]
+                }
+            }
+
+        },
+        {
+            "id": 3,
+            "common_name": "Mallow",
+            "slug": "malva-sylvestris",
+            "scientific_name": "Malva sylvestris",
+            "family_common_name": "Malvaceae",
+            "image_url": "https://unsplash.com/photos/oMHTmGFCcTU",
+            "synonyms": ["Malva", "Hollyhock"],
+            "main_species": {
+                "growth": {
+                    "bloom_months": ["June", "July", "August", "September"],
+                    "ph_maximum": 7,
+                    "ph_minimum": 6,
+                    "light": "semi-shade",
+                    "atmospheric_humidity": null,
+                    "minimum_temperature.deg_c": null,
+                    "maximum_temperature.deg_c": null,
+                    "soil_texture": "ordinary, well-drained soil",
+                    "soil_humidity": "sandy, dry soil"
+                },
+                "distribution": {
+                    "native": ["eastern Europe", "northern Africa"]
+                },
+                "images": {
+                    "flower": ["https://unsplash.com/photos/OPo32FR0aGs", "https://unsplash.com/photos/vcZAs4mKtgU", "https://unsplash.com/photos/cvw0xxey6u4", "https://unsplash.com/photos/MaodP4_l_cQ"],
+                    "leaf": []
+                }
+            }
+
+        }
+    ],
+    "meta": {
+        "total": 3
     }
-]
+}
+
+
