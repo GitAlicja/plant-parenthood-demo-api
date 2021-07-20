@@ -1,8 +1,20 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /* font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
 }
 
 a {
   color: #00B7FF;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, tr {
+  border: 1px solid #ebedf0;
+}
+
+td {
+  padding: 10px;
 }

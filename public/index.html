@@ -1,13 +1,46 @@
 <html>
 
 <head>
-  <title>Express</title>
+  <title>Plants Demo API</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
-  <h1>Express</h1>
-  <p>Welcome to Express</p>
+  <h1>Plants Demo API</h1>
+  <p>Welcome to the Plants Demo API which contains data on selected plants.</p>
+
+  <p>The available endpoints are the following: </p>
+
+  <table>
+      <tr>
+        <td>Method</td>
+        <td>Endpoint</td>
+        <td>Action</td>
+      </tr>
+      <tr>
+        <td>GET</td>
+        <td>/api/v1/plants/search</td>
+        <td>Get all the plants</td>
+      </tr>
+      <tr>
+        <td>GET</td>
+        <td>/api/v1/plants/search?q={query}&page={number}</td>
+        <td>Get plants whose common name, scientific name or synonym contains the search term</td>
+      </tr>
+      <tr>
+        <td>GET</td>
+        <td>/api/v1/plants/:slug</td>
+        <td>Get a single/specific plant</td>
+      </tr>
+  </table>
+
+  <p>Sources:
+  <ul>
+    <li>Photos: Free to use under <a href="https://unsplash.com/license">Unsplash License</a></li>
+    <li>Plants info: <a href="https://www.britannica.com/">Britannica.com</a> and <a
+        href="https://en.wikipedia.org/">Wikipedia.org</a></li>
+  </ul>
+  </p>
 </body>
 
 </html>
