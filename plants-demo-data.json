@@ -6,7 +6,7 @@
             "slug": "lavandula-angustifolia",
             "scientific_name": "Lavandula angustifolia",
             "family_common_name": "Lamiaceae",
-            "image_url": "https://unsplash.com/photos/DhC4Bo9dM9M",
+            "image_url": "/images/lavandula-angustifolia.jpg",
             "synonyms": ["Stoechas", "Fabricia", "Styphonia", "Chaetostachys"],
             "main_species": {
                 "growth": {
@@ -15,8 +15,8 @@
                     "ph_minimum": 6,
                     "light": "full sun",
                     "atmospheric_humidity": "needs good air circulation",
-                    "minimum_temperature.deg_c": null,
-                    "maximum_temperature.deg_c": null,
+                    "minimum_temperature": {"deg_c": null},
+                    "maximum_temperature": {"deg_c": null},
                     "soil_texture": "well-drained, alkaline soil",
                     "soil_humidity": "dry to medium"
                 },
@@ -24,11 +24,17 @@
                     "native": ["countries bordering the Mediterranean"]
                 },
                 "images": {
-                    "flower": ["https://unsplash.com/photos/maTTTnHzPIk", "https://unsplash.com/photos/IjygOuTpEzg", "https://unsplash.com/photos/6WZUmYgZlMY", "https://unsplash.com/photos/ft9NjuyReqI", "https://unsplash.com/photos/wm_Q_M7uEes", "https://unsplash.com/photos/LBu4WQxJNMw"],
+                    "flower": [
+                        {"image_url": "/images/lavandula-angustifolia1.jpg", "altText": "Lavandula angustifolia", "id": 11}, 
+                        {"image_url": "/images/lavandula-angustifolia2.jpg", "altText": "Lavandula angustifolia", "id": 12},
+                        {"image_url": "/images/lavandula-angustifolia3.jpg", "altText": "Lavandula angustifolia", "id": 13}, 
+                        {"image_url": "/images/lavandula-angustifolia4.jpg", "altText": "Lavandula angustifolia", "id": 14}, 
+                        {"image_url": "/images/lavandula-angustifolia5.jpg", "altText": "Lavandula angustifolia", "id": 15}, 
+                        {"image_url": "/images/lavandula-angustifolia6.jpg", "altText": "Lavandula angustifolia", "id": 16}
+                    ],
                     "leaf": []
                 }
             }
-
         },
         {
             "id": 2,
@@ -36,7 +42,7 @@
             "slug": "paeonia-suffruticosa",
             "scientific_name": "Paeonia suffruticosa",
             "family_common_name": "Paeoniaceae",
-            "image_url": "https://unsplash.com/photos/MVKYxT3VB3A",
+            "image_url": "/images/paeonia-suffruticosa.jpg",
             "synonyms": ["Paeony", "Paeonia"],
             "main_species": {
                 "growth": {
@@ -45,8 +51,8 @@
                     "ph_minimum": 5,
                     "light": "full sun",
                     "atmospheric_humidity": "needs good air circulation",
-                    "minimum_temperature.deg_c": null,
-                    "maximum_temperature.deg_c": null,
+                    "minimum_temperature": {"deg_c": null},
+                    "maximum_temperature": {"deg_c": null},
                     "soil_texture": "well-drained, loamy",
                     "soil_humidity": "medium"
                 },
@@ -54,8 +60,16 @@
                     "native": ["Asia", "Europe"]
                 },
                 "images": {
-                    "flower": ["https://unsplash.com/photos/_C9XM02Y5ZE", "https://unsplash.com/photos/ouopeFpkwco", "https://unsplash.com/photos/eK2lSRUZkbo", "https://unsplash.com/photos/6BykweIpp8s", "https://unsplash.com/photos/CvYlRp82jwE"],
-                    "leaf": ["https://unsplash.com/photos/twLC379XTMs", "https://unsplash.com/photos/Ljp8fd3jVLg", "https://unsplash.com/photos/OelgZ9Hh7Zg"]
+                    "flower": [
+                        {"image_url": "/images/paeonia-suffruticosa1.jpg", "altText": "Paeonia suffruticosa", "id": 21}, 
+                        {"image_url": "/images/paeonia-suffruticosa2.jpg", "altText": "Paeonia suffruticosa", "id": 22}, 
+                        {"image_url": "/images/paeonia-suffruticosa3.jpg", "altText": "Paeonia suffruticosa", "id": 23}, 
+                        {"image_url": "/images/paeonia-suffruticosa4.jpg", "altText": "Paeonia suffruticosa", "id": 24}, 
+                        {"image_url": "/images/paeonia-suffruticosa5.jpg", "altText": "Paeonia suffruticosa", "id": 25}, 
+                        {"image_url": "/images/paeonia-suffruticosa6.jpg", "altText": "Paeonia suffruticosa", "id": 26}, 
+                        {"image_url": "/images/paeonia-suffruticosa7.jpg", "altText": "Paeonia suffruticosa", "id": 27}
+                    ],
+                    "leaf": []
                 }
             }
 
@@ -66,7 +80,7 @@
             "slug": "malva-sylvestris",
             "scientific_name": "Malva sylvestris",
             "family_common_name": "Malvaceae",
-            "image_url": "https://unsplash.com/photos/oMHTmGFCcTU",
+            "image_url": "/images/malva-sylvestris.jpg",
             "synonyms": ["Malva", "Hollyhock"],
             "main_species": {
                 "growth": {
@@ -75,8 +89,8 @@
                     "ph_minimum": 6,
                     "light": "semi-shade",
                     "atmospheric_humidity": null,
-                    "minimum_temperature.deg_c": null,
-                    "maximum_temperature.deg_c": null,
+                    "minimum_temperature": {"deg_c": null},
+                    "maximum_temperature": {"deg_c": null},
                     "soil_texture": "ordinary, well-drained soil",
                     "soil_humidity": "sandy, dry soil"
                 },
@@ -84,7 +98,10 @@
                     "native": ["eastern Europe", "northern Africa"]
                 },
                 "images": {
-                    "flower": ["https://unsplash.com/photos/OPo32FR0aGs", "https://unsplash.com/photos/vcZAs4mKtgU", "https://unsplash.com/photos/cvw0xxey6u4", "https://unsplash.com/photos/MaodP4_l_cQ"],
+                    "flower": [ 
+                        {"image_url": "/images/malva-sylvestris1.jpg", "altText": "Malva sylvestris", "id": 31}, 
+                        {"image_url": "/images/malva-sylvestris2.jpg", "altText": "Malva sylvestris", "id": 32}
+                    ],
                     "leaf": []
                 }
             }
