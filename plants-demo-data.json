@@ -106,9 +106,79 @@
                 }
             }
 
+        },
+        {
+            "id": 4,
+            "common_name": "Chamomile",
+            "slug": "matricaria-chamomilla",
+            "scientific_name": "Matricaria chamomilla",
+            "family_common_name": "Asteraceae",
+            "image_url": "/images/matricaria-chamomilla.jpg",
+            "synonyms": ["Camomile", "German chamomile", "Scented mayweed", "Chamomilla chamomilla", "Matricaria recutita", "Matricaria suaveolens"],
+            "main_species": {
+                "growth": {
+                    "bloom_months": ["June", "July", "August", "September", "October"],
+                    "ph_maximum": 7.5,
+                    "ph_minimum": 5.6,
+                    "light": "full sun",
+                    "atmospheric_humidity": null,
+                    "minimum_temperature": {"deg_c": -10},
+                    "maximum_temperature": {"deg_c": 38},
+                    "soil_texture": "light to heavy soils, grows best on well balanced soils with good topsoil",
+                    "soil_humidity": "sandy to loamy soils that are mostly acidic"
+                },
+                "distribution": {
+                    "native": ["South-West Asia", "South- to Eastern Europe"]
+                },
+                "images": {
+                    "flower": [ 
+                        {"image_url": "/images/matricaria-chamomilla1.jpg", "altText": "Malva sylvestris", "id": 41}, 
+                        {"image_url": "/images/matricaria-chamomilla2.jpg", "altText": "Malva sylvestris", "id": 42},
+                        {"image_url": "/images/matricaria-chamomilla3.jpg", "altText": "Malva sylvestris", "id": 43},
+                        {"image_url": "/images/matricaria-chamomilla4.jpg", "altText": "Malva sylvestris", "id": 44}
+                    ],
+                    "leaf": []
+                }
+            }
+
+        },
+        {
+            "id": 5,
+            "common_name": "Lilac",
+            "slug": "syringa-vulgaris",
+            "scientific_name": "Syringa vulgaris",
+            "family_common_name": "Oleaceae",
+            "image_url": "/images/syringa-vulgaris.jpg",
+            "synonyms": ["Common lilac", "Lilac bush"],
+            "main_species": {
+                "growth": {
+                    "bloom_months": ["April", "May"],
+                    "ph_maximum": 7,
+                    "ph_minimum": 6.1,
+                    "light": "full sun",
+                    "atmospheric_humidity": null,
+                    "minimum_temperature": {"deg_c": -40},
+                    "maximum_temperature": {"deg_c": 37},
+                    "soil_texture": "like loamy, somewhat moist, neutral to slightly alkaline soil, well-drained",
+                    "soil_humidity": "average water needs, water regularly"
+                },
+                "distribution": {
+                    "native": ["Balkan Peninsula"]
+                },
+                "images": {
+                    "flower": [ 
+                        {"image_url": "/images/syringa-vulgaris1.jpg", "altText": "Malva sylvestris", "id": 51}, 
+                        {"image_url": "/images/syringa-vulgaris2.jpg", "altText": "Malva sylvestris", "id": 52},
+                        {"image_url": "/images/syringa-vulgaris3.jpg", "altText": "Malva sylvestris", "id": 53},
+                        {"image_url": "/images/syringa-vulgaris4.jpg", "altText": "Malva sylvestris", "id": 54}
+                    ],
+                    "leaf": []
+                }
+            }
+
         }
     ],
     "meta": {
-        "total": 3
+        "total": 5
     }
 }
