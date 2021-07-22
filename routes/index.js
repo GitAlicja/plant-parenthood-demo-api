@@ -4,15 +4,40 @@ const router = express.Router();
 const bodyParser = require('body-parser');
 const plants_demo_data = require('../plants-demo-data.json');
 
-/* GET the page with all plants. */
-router.get('/api/v1/plants/search', (req, res, next) => {
-
+const checkToken = (req, res, next) => {
   const apiToken = req.query.token;
-
   if (apiToken !== process.env.DEMO_API_ACCESS_TOKEN) {
     res.status(401).json({ error: "Invalid API token!" });
     return;
   }
+  next();
+};
+
+const adjustImageUri = (plantData) => {
+
+  const flowerImages = plantData.main_species.images.flower
+    .map(imgObj => ({ // using () around {} gives back an object
+      ...imgObj,
+      image_url: process.env.HOST_URI + imgObj.image_url,
+    }));
+
+  // override recursive modified values
+  return {
+    ...plantData,
+    image_url: process.env.HOST_URI + plantData.image_url,
+    main_species: {
+      ...plantData.main_species,
+      images: {
+        ...plantData.main_species.images,
+        flower: flowerImages
+      }
+    }
+  };
+};
+
+
+/* GET the page with all plants. */
+router.get('/api/v1/plants/search', checkToken, (req, res, next) => {
 
   let term = req.query.q;
   if (typeof term === 'string') {
@@ -36,23 +61,14 @@ router.get('/api/v1/plants/search', (req, res, next) => {
   const pageSize = 20;
   const begin = (pageNum - 1) * pageSize; // pageNum * pageSize - pageSize
   const end = begin + pageSize - 1;
-  const pageData = data.slice(begin, end)
-    .map(plant => ({ ...plant, image_url: process.env.HOST_URI + plant.image_url }));
+  const pageData = data.slice(begin, end).map(p => adjustImageUri(p));
 
   res.json({ data: pageData, meta: { total: data.length } });
 });
 
 
 /* GET single plant page. */
-router.get('/api/v1/plants/:slug', (req, res, next) => {
-
-  const apiToken = req.query.token;
-
-  if (apiToken !== process.env.DEMO_API_ACCESS_TOKEN) {
-    res.status(401).json({ error: "Invalid API token!" });
-    return;
-  }
-
+router.get('/api/v1/plants/:slug', checkToken, (req, res, next) => {
 
   let apiSlug = decodeURIComponent(req.params.slug);
 
@@ -68,27 +84,7 @@ router.get('/api/v1/plants/:slug', (req, res, next) => {
     return;
   }
 
-  const flowerImages = plantData.main_species.images.flower
-    .map(imgObj => ({ // using () around {} gives back an object
-      ...imgObj,
-      image_url: process.env.HOST_URI + imgObj.image_url,
-    }));
-
-  // override recursive modified values
-  res.json({
-    data: {
-      ...plantData,
-      image_url: process.env.HOST_URI + plantData.image_url,
-      main_species: {
-        ...plantData.main_species,
-        images: {
-          ...plantData.main_species.images,
-          flower: flowerImages
-        }
-      }
-    }
-  })
-
+  res.json({ data: adjustImageUri(plantData) })
 });
 
 /* GET home page. */
